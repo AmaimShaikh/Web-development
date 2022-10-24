@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(162,140,219,1) 0%, rgba(214,147,199,1) 100%); 
+}
+
+.container {
+    background-color: #f1e9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    margin: 10rem 0;
+}
+
+.heading {
+    margin-top: 3rem;
+    letter-spacing: 2px;
+}
+
+
+
+
+/* input and add btn style */
+
+.inputItem { /* div containing input and add btn*/
+    padding: 0.2rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    overflow: hidden;
+}
+
+.addBtn, .itemInput {
+    border: none;
+    font-size: 1rem;
+    background-color: rgb(213, 213, 255);
+}
+
+.itemInput { /*input inside inputItem div*/
+    width: 27vw;
+    outline: none;
+    padding: 0.7rem;
+}
+
+.addBtn { /*btn inside inputItem div*/
+    cursor: pointer;
+    margin-left: 0.2rem;
+    border-radius: 0.3rem;
+    padding: 0.7rem 1.6rem;
+}
+
+
+
+/* clear button style */
+
+.clearBtn {
+    margin: 1rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgb(231, 34, 34);
+}
+
+
+
+
+
+/* styling the item list */
+
+.itemListContainer {
+    margin: 1rem ;
+}
+
+/* ul */
+.itemList {
+    list-style: none;
+}
+
+/* list item li*/
+.newListItem {
+    width: 65%;
+    word-wrap: break-word;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(218, 218, 255);
+    border-radius: 0.2rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    width: 25vw;
+    transition: all 0.5s ease;
+}
+
+/* to bring check btn next to delete */
+.listItem li {
+    flex: auto;
+}
+
+
+
+
+
+/* button style */
+.fa-check, .fa-trash {
+    pointer-events: none;
+}
+
+.checkBtn, .deleteBtn {
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+/* when check is clicked */
+.checked {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+    body {
+        height: 50%;
+    }
+    .heading {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .container {
+        width: 500px;
+    }
+    .inputItem {
+        width: 44vw;
+    }
+    .itemInput {
+        width: 39vw;
+        padding: 0.3rem;
+    }
+    .addBtn {
+        padding: 0.3rem 1rem;
+    }
+    
+    
+    .newListItem {
+        width: 35%;
+    }
+
+    .listItem {
+        padding: 0.2rem;
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .container {
+        width: 350px;
+        margin-top: 6rem;
+    }
+    .inputItem {
+        width: 45vw;
+    }
+    .itemInput {
+        width: 32vw;
+    }
+    .newListItem {
+        width: 17%;
+    }
+
+    .listItem {
+        padding: 0.2rem;
+        width: 47vw;
+    }
+}

@@ -1,0 +1,100 @@
+body {
+    background-color: #4071F4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+h2 {
+    position: relative;
+    left: 27px;
+    padding-top: 1.6rem;
+}
+
+h2 span {
+    border-bottom: 3px solid #4071F4;
+    border-radius: 3px;
+}
+
+.registrationBlock {
+    background-color: lavender;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10rem;
+    width: 370px; 
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa, .fa-regular {
+    margin-right: 0.7rem;
+}
+
+.nameDiv, .emailDiv, .passDiv, .confirmPassDiv {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.fa-eye {
+    position: relative;
+    left: 25px;
+}
+
+#name, #email, #password, #confirmPassword {
+    margin-bottom: 3px;
+    width: 75%;
+}
+
+input {
+    border: none;
+    background-color: lavender;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formContent {
+    padding: 0 1rem 1.5rem 1.5rem;
+}
+
+.accept {
+    padding: 0.2rem 0 1.7rem 0;
+}
+
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: #4071F4;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1.3rem;
+}
+
+
+@media screen and (max-width: 390px) {
+    .registrationBlock {
+        max-width: 300px;
+    }
+
+    #name, #email, #password, #confirmPassword {
+        width: 70%;
+    }
+}

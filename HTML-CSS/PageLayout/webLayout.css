@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding-top: 1.5rem;
+}
+
+.outerNav {
+    background-color: #F5F5F5;
+}
+
+.pageName {
+    font-size: 23px;
+}
+
+
+ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    height: 60vh;
+    width: 100%;
+}
+
+/* Project Images */
+.project {
+    width: 85%;
+    margin: auto;
+}
+
+.projImg {
+    max-width: 23%;
+    height: auto;
+}
+
+
+.images {
+    max-width: 85%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.firstImgRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondImgRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+
+.heading {
+    font-size: 30px;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+
+/* About */
+
+.about {
+    width: 85%;
+    margin: auto;
+}
+
+.aboutPara {
+    font-size: 17px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.testBlock {
+    border: 3px solid lightgray;
+    border-radius: 0.3rem;
+    flex: 33.33%;
+    max-width: 22%;
+    margin-top: 1rem;
+}
+
+.testImg {
+    width: 100%;
+    height: 30vh;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+h4 {
+    font-weight: lighter;
+    font-size: 26px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.testPara {
+    font-size: 18px;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.border {
+    width: 85%;
+    height: 3px;
+    background: #a3a8a2;
+    margin-top: 5rem;
+    margin: auto;
+}
+
+
+/* Contact */
+.contact {
+    width: 85%;
+    margin: auto;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstName,
+.lastName {
+    width: 49%;
+}
+
+.formDiv {
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.field {
+    width: 100%;
+    margin: 0.5rem auto;
+    outline: none;
+    padding: 0.2rem 0;
+}
+
+/* location */
+.address {
+    width: 85%;
+    margin: auto;
+}
+
+.map {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin: auto;
+}
+
+iframe {
+    width: 85%;
+    height: 50vh;
+    border: 3px solid firebrick;
+}
+
+.footer_ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+li span {
+    color: white;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .testBlock {
+        flex: 100%;
+        max-width: 80%;
+    }
+
+    a, .pageName{
+        font-size: 17px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .nav {
+        width: 90%;
+    }
+}

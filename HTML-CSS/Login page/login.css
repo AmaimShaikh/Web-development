@@ -1,0 +1,113 @@
+body {
+    background-color: #4071F4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    padding-top: 1.6rem;
+    margin-left: 1.6rem;
+
+    /* Another way to apply border on lo only in login */
+    /* width: 8%; */
+    /* border-bottom: 3px solid #4071F4; */
+    /* border-radius: 3px; */
+}
+
+h2 span {
+    border-bottom: 3px solid #4071F4;
+    border-radius: 3px;
+}
+
+
+
+.loginBlock {
+    background-color: lavender;
+    border-radius: 5px;
+    margin: auto; 
+    margin-top: 10rem;
+    max-width: 370px; 
+    
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.fa {
+    margin-right: 0.7rem;
+}
+
+.emailDiv, .passDiv {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#email, #password {
+    margin-bottom: 3px;
+    width: 75%;
+}
+
+.fa-eye {
+    position: relative;
+    left: 25px;
+}
+
+
+input {
+    background-color: lavender;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formContent {
+    padding: 0 1rem 1.5rem 1.5rem;
+}
+
+.rememMe {
+    display: inline;
+    font-weight: lighter;
+}
+
+.checkAndRemem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0 1rem 0;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: #4071F4;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1.3rem;
+}
+
+
+@media screen and (max-width: 390px) {
+    .loginBlock {
+        max-width: 300px;
+    }
+
+    #email, #password {
+        width: 70%;
+    }
+}

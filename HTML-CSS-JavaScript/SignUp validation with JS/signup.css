@@ -1,0 +1,125 @@
+body {
+    background-color: #4071F4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+h2 {
+    position: relative;
+    left: 27px;
+    padding-top: 1.6rem;
+}
+
+h2 span {
+    border-bottom: 3px solid #4071F4;
+    border-radius: 3px;
+}
+
+.registrationBlock {
+    background-color: lavender;
+    border-radius: 5px;
+    margin: 10rem auto;
+    width: 370px; 
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+a {
+    text-decoration: none;
+}
+
+.fa, .fa-regular {
+    margin-right: 0.7rem;
+}
+
+.nameDiv, .emailDiv, .passDiv, .confirmPassDiv {
+    border-bottom: 1px solid grey;
+    margin-top: 1.8rem;
+}
+
+.error {
+    color: rgb(187, 64, 64);
+    font-size: 15px;
+}
+
+#showPassword, #showConfirmPassword {
+    position: relative;
+    left: 25px;
+    cursor: pointer;
+    color: rgb(102, 95, 95);
+}
+
+#name, #email, #password, #confirmPassword {
+    margin-bottom: 3px;
+    width: 75%;
+}
+
+input {
+    border: none;
+    background-color: lavender;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formContent {
+    padding: 0 1rem 1.5rem 1.5rem;
+}
+
+.accept {
+    margin-top: 1.9rem;
+}
+
+.checkboxError {
+    margin-bottom: 1.4rem;
+}
+
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: #4071F4;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1.3rem;
+}
+
+.nameError, .emailError, .passError, .confirmPassError {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#nameExcla, #emailExcla, #passExcla, #confirmPassExcla, #checkboxExcla {
+    color: rgb(187, 64, 64);
+    margin-left: 0;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 390px) {
+    .registrationBlock {
+        max-width: 300px;
+    }
+
+    #name, #email, #password, #confirmPassword {
+        width: 70%;
+    }
+}
